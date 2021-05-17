@@ -1,17 +1,4 @@
-123
-123
-12
-3
-123
-1
-dhakjshdjkasdf
-asdf
-a s
-df
-asd
-f
-asd
-tawerqwfasdg
-asg
-a
+Git is a distributed version control system
+Git is free software distributed under the GPL
+Git has a mutable index called stage
 
