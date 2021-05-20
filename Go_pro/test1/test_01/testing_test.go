@@ -23,5 +23,5 @@ func TestLocal(t *testing.T) {
   t.Log("local测试fetch")
 }
 
-func TestGit2(t *testing.T) {
+func TestLocal1(t *testing.T) {
 }
