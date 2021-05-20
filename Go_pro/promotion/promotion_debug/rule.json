@@ -1,0 +1,299 @@
+[
+  {
+    "id": 1949,
+    "code": "2102099185",
+    "multi_discounts": [],
+    "is_regular_price": 0,
+    "many_times_exec": false,
+    "ladder_discounts": [
+      {
+        "content": 60,
+        "exchange_price": 0.0,
+        "x_qty": 2,
+        "exchange_point": 0,
+        "x_amount": 100.0,
+        "include_op": "and",
+        "z_definition": {}
+      }
+    ],
+    "name": "促销D",
+    "type": "combo",
+    "disc_type": "reduce",
+    "rule_concurrent_type": "zp_reduce",
+    "w_definitions": [
+      {
+        "ex_product_codes": [],
+        "x_qty": 1,
+        "x_amount": 0.0,
+        "ex_definition_json": [
+        ],
+        "extra_prod_info": {
+        },
+        "include_op": "and",
+        "amt_cmp_type": "gte",
+        "definition_json": [
+        ],
+        "qty_cmp_type": "gte",
+        "product_codes": [
+          "8303410101F",
+          "8303370009F",
+          "P080M621304F",
+          "P082B540024M",
+          "8303470701F",
+          "8302310614F"
+        ]
+      }
+    ],
+    "rule_concurrent_dict": {
+      "dp_reduce": 1,
+      "dp_discount": 1,
+      "dp_fix": 1,
+      "dc_discount": 1,
+      "dc_reduce": 1,
+      "zp_gift": 1,
+      "zp_fix": 1,
+      "zp_reduce": 0,
+      "zp_discount": 1,
+      "zc_reduce": 1,
+      "zc_discount": 1
+    },
+    "priority_seq": 4
+  },
+  {
+    "code": "2102099195",
+    "concurrent_exec_card": 0,
+    "time_end": "",
+    "order_dis_ops": "btw",
+    "order_r_discount": 1.0,
+    "concurrent_exec_vip": 0,
+    "time_start": "",
+    "member_limit_opts": false,
+    "x_amount": 0.0,
+    "pack_disc_type": false,
+    "include_op": false,
+    "concurrent_exec_vip_extra": 0,
+    "y_amount": 0.0,
+    "w_products": {},
+    "start_date": "2021-02-08",
+    "concurrent_exec_combo": 1,
+    "multi_discount_desc": true,
+    "end_date": "2022-03-02",
+    "shop_ids": [],
+    "concurrent_exec_single": 0,
+    "is_active": true,
+    "is_regular_price": 0,
+    "multi_discounts": [],
+    "y_price": 0.0,
+    "name": "u5168u573au4efbu610fu889cu5b502u53cc19",
+    "type": "combo",
+    "z_definitions": [],
+    "ex_disc_prod": false,
+    "y_discount": 1.0,
+    "time_limit": false,
+    "for_all_shops": true,
+    "id": 1951,
+    "x_qty": 0,
+    "many_times_exec": false,
+    "weekday_ids": [],
+    "state": "done",
+    "order_l_discount": 0.0,
+    "z_products": {},
+    "member_limit": false,
+    "v_definition_json": "",
+    "ladder_discounts": [
+      {
+        "content": 19.0,
+        "exchange_price": 0.0,
+        "x_qty": 2,
+        "exchange_point": 0,
+        "x_amount": 0.0,
+        "include_op": "and",
+        "z_definition": {}
+      }
+    ],
+    "use_coupon": false,
+    "ex_shop_ids": [],
+    "disc_type": "fix",
+    "rule_concurrent_type": "zp_fix",
+    "w_definitions": [
+      {
+        "ex_product_codes": [],
+        "x_qty": 1,
+        "x_amount": 0.0,
+        "ex_definition_json": [],
+        "extra_prod_info": {
+        },
+        "include_op": "and",
+        "amt_cmp_type": "gte",
+        "definition_json": "",
+        "qty_cmp_type": "gte",
+        "product_codes": [
+          "8303410101F",
+          "8303370009F",
+          "P080M621304F",
+          "P082B540024M",
+          "8303470701F",
+          "8302310614F"
+        ],
+        "y_discount": 0.0
+      }
+    ],
+    "rule_concurrent_dict": {
+      "dc_discount": 0,
+      "dp_reduce": 0,
+      "dp_fix": 0,
+      "zc_reduce": 0,
+      "zp_gift": 0,
+      "dp_discount": 0,
+      "zp_fix": 1,
+      "zp_reduce": 1,
+      "zp_discount": 0,
+      "zc_discount": 0,
+      "dc_reduce": 0
+    },
+    "priority_seq": 1
+  },
+  {
+    "priority_seq": 1,
+    "code": "2102099173",
+    "concurrent_exec_card": 0,
+    "time_end": "",
+    "order_dis_ops": "btw",
+    "order_r_discount": 1.0,
+    "concurrent_exec_vip": 0,
+    "time_start": "",
+    "member_limit_opts": false,
+    "x_amount": 0.0,
+    "pack_disc_type": false,
+    "include_op": false,
+    "concurrent_exec_vip_extra": 0,
+    "y_amount": 0.0,
+    "w_products": {},
+    "start_date": "2021-02-08",
+    "concurrent_exec_combo": 1,
+    "multi_discount_desc": true,
+    "end_date": "2022-01-14",
+    "shop_ids": [],
+    "concurrent_exec_single": 0,
+    "is_active": true,
+    "is_regular_price": 0,
+    "multi_discounts": [],
+    "y_price": 0.0,
+    "name": "u7537u889cu4e09u53cc39",
+    "type": "combo",
+    "z_definitions": [],
+    "ex_disc_prod": false,
+    "y_discount": 1.0,
+    "time_limit": false,
+    "for_all_shops": true,
+    "id": 1947,
+    "x_qty": 0,
+    "many_times_exec": true,
+    "weekday_ids": [],
+    "state": "done",
+    "order_l_discount": 0.0,
+    "z_products": {},
+    "member_limit": false,
+    "v_definition_json": "",
+    "ladder_discounts": [
+      {
+        "content": 39.0,
+        "exchange_price": 0.0,
+        "x_qty": 3,
+        "exchange_point": 0,
+        "x_amount": 0.0,
+        "include_op": "and",
+        "z_definition": {}
+      },
+      {
+        "content": 78.0,
+        "exchange_price": 0.0,
+        "x_qty": 6,
+        "exchange_point": 0,
+        "x_amount": 0.0,
+        "include_op": "and",
+        "z_definition": {}
+      },
+      {
+        "content": 117.0,
+        "exchange_price": 0.0,
+        "x_qty": 9,
+        "exchange_point": 0,
+        "x_amount": 0.0,
+        "include_op": "and",
+        "z_definition": {}
+      },
+      {
+        "content": 156.0,
+        "exchange_price": 0.0,
+        "x_qty": 12,
+        "exchange_point": 0,
+        "x_amount": 0.0,
+        "include_op": "and",
+        "z_definition": {}
+      },
+      {
+        "content": 195.0,
+        "exchange_price": 0.0,
+        "x_qty": 15,
+        "exchange_point": 0,
+        "x_amount": 0.0,
+        "include_op": "and",
+        "z_definition": {}
+      },
+      {
+        "content": 234.0,
+        "exchange_price": 0.0,
+        "x_qty": 18,
+        "exchange_point": 0,
+        "x_amount": 0.0,
+        "include_op": "and",
+        "z_definition": {}
+      }
+    ],
+    "use_coupon": false,
+    "ex_shop_ids": [],
+    "disc_type": "fix",
+    "rule_concurrent_type": "zp_fix",
+    "w_definitions": [
+      {
+        "ex_product_codes": [],
+        "x_qty": 1,
+        "x_amount": 0.0,
+        "ex_definition_json": [],
+        "extra_prod_info": {
+          "8303370009F": 0,
+          "P080M621304F": 0,
+          "8303410101F": 0,
+          "8303470701F": 0,
+          "P080M710109F": 0
+        },
+        "include_op": "and",
+        "amt_cmp_type": "gte",
+        "definition_json": "",
+        "qty_cmp_type": "gte",
+        "product_codes": [
+          "8303370009F",
+          "P080M621304F",
+          "8303410101F",
+          "8303470701F",
+          "P080M710109F"
+        ],
+        "y_discount": 0.0
+      }
+    ],
+    "rule_concurrent_dict": {
+      "dc_discount": 0,
+      "dp_reduce": 0,
+      "dp_fix": 0,
+      "zc_reduce": 0,
+      "zp_gift": 0,
+      "dp_discount": 0,
+      "zp_fix": 1,
+      "zp_reduce": 1,
+      "zp_discount": 0,
+      "zc_discount": 0,
+      "dc_reduce": 0
+    }
+  }
+]
