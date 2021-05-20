@@ -18,3 +18,7 @@ func TestAbs(t *testing.T) {
 func TestGit(t *testing.T) {
   t.Log("测试fetch")
 }
+
+func TestGit2(t *testing.T) {
+  t.Logf("git_dev测试fetch")
+}
