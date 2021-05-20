@@ -18,7 +18,3 @@ func TestAbs(t *testing.T) {
 func TestGit(t *testing.T) {
   t.Log("测试fetch")
 }
-
-func TestGit1(t *testing.T) {
-  t.Log("本地测试fetch")
-}
