@@ -10,3 +10,7 @@ func BenchmarkHello(b *testing.B) {
 		fmt.Sprintf("Hello")
 	}
 }
+
+func TestAbs(t *testing.T) {
+  t.Log("测试git")
+}
