@@ -1,4 +1,4 @@
-package shi_Tfng_MA
+package shi_Tfng
 
 import (
 	"math"
@@ -9,7 +9,7 @@ import (
 	"github.com/go-playground/locales/currency"
 )
 
-type shi_Tfng_MA struct {
+type shi_Tfng struct {
 	locale             string
 	pluralsCardinal    []locales.PluralRule
 	pluralsOrdinal     []locales.PluralRule
@@ -39,10 +39,10 @@ type shi_Tfng_MA struct {
 	timezones          map[string]string
 }
 
-// New returns a new instance of translator for the 'shi_Tfng_MA' locale
+// New returns a new instance of translator for the 'shi_Tfng' locale
 func New() locales.Translator {
-	return &shi_Tfng_MA{
-		locale:             "shi_Tfng_MA",
+	return &shi_Tfng{
+		locale:             "shi_Tfng",
 		pluralsCardinal:    []locales.PluralRule{2, 4, 6},
 		pluralsOrdinal:     nil,
 		pluralsRange:       nil,
@@ -60,32 +60,32 @@ func New() locales.Translator {
 		erasAbbreviated:    []string{"ⴷⴰⵄ", "ⴷⴼⵄ"},
 		erasNarrow:         []string{"", ""},
 		erasWide:           []string{"ⴷⴰⵜ ⵏ ⵄⵉⵙⴰ", "ⴷⴼⴼⵉⵔ ⵏ ⵄⵉⵙⴰ"},
-		timezones:          map[string]string{"TMST": "TMST", "HADT": "HADT", "ART": "ART", "NZST": "NZST", "BOT": "BOT", "HNPM": "HNPM", "HENOMX": "HENOMX", "MST": "MST", "MEZ": "MEZ", "HNPMX": "HNPMX", "AEST": "AEST", "JST": "JST", "ACST": "ACST", "HNNOMX": "HNNOMX", "COT": "COT", "GYT": "GYT", "JDT": "JDT", "LHST": "LHST", "CHADT": "CHADT", "WAT": "WAT", "GFT": "GFT", "EDT": "EDT", "HEEG": "HEEG", "ADT": "ADT", "HECU": "HECU", "WESZ": "WESZ", "EST": "EST", "WARST": "WARST", "OESZ": "OESZ", "HAST": "HAST", "UYST": "UYST", "CLST": "CLST", "CDT": "CDT", "HEPMX": "HEPMX", "ECT": "ECT", "ACDT": "ACDT", "WART": "WART", "HNT": "HNT", "CAT": "CAT", "AEDT": "AEDT", "ACWDT": "ACWDT", "SAST": "SAST", "WAST": "WAST", "WIB": "WIB", "BT": "BT", "AKDT": "AKDT", "ACWST": "ACWST", "WIT": "WIT", "HNCU": "HNCU", "HEOG": "HEOG", "HKST": "HKST", "CHAST": "CHAST", "AWDT": "AWDT", "MYT": "MYT", "VET": "VET", "MDT": "MDT", "OEZ": "OEZ", "MESZ": "MESZ", "WITA": "WITA", "SRT": "SRT", "PDT": "PDT", "AWST": "AWST", "AST": "AST", "AKST": "AKST", "HNOG": "HNOG", "HEPM": "HEPM", "TMT": "TMT", "UYT": "UYT", "HKT": "HKT", "∅∅∅": "∅∅∅", "IST": "IST", "CLT": "CLT", "ChST": "ChST", "EAT": "EAT", "ARST": "ARST", "COST": "COST", "NZDT": "NZDT", "SGT": "SGT", "HNEG": "HNEG", "LHDT": "LHDT", "HAT": "HAT", "GMT": "GMT", "CST": "CST", "PST": "PST", "WEZ": "WEZ"},
+		timezones:          map[string]string{"VET": "VET", "HNNOMX": "HNNOMX", "CLT": "CLT", "WIT": "WIT", "CHADT": "CHADT", "AKST": "AKST", "ACWST": "ACWST", "HNOG": "HNOG", "CLST": "CLST", "OESZ": "OESZ", "HADT": "HADT", "MYT": "MYT", "LHDT": "LHDT", "GMT": "GMT", "UYT": "UYT", "HEPMX": "HEPMX", "WAST": "WAST", "WEZ": "WEZ", "WITA": "WITA", "MST": "MST", "EAT": "EAT", "CHAST": "CHAST", "ADT": "ADT", "AEDT": "AEDT", "NZST": "NZST", "SGT": "SGT", "HENOMX": "HENOMX", "COT": "COT", "GYT": "GYT", "PDT": "PDT", "JDT": "JDT", "EST": "EST", "ACST": "ACST", "HEOG": "HEOG", "∅∅∅": "∅∅∅", "ART": "ART", "HECU": "HECU", "PST": "PST", "ACDT": "ACDT", "HEEG": "HEEG", "MEZ": "MEZ", "HKST": "HKST", "HNCU": "HNCU", "ACWDT": "ACWDT", "TMST": "TMST", "UYST": "UYST", "SAST": "SAST", "WESZ": "WESZ", "IST": "IST", "LHST": "LHST", "HNT": "HNT", "TMT": "TMT", "OEZ": "OEZ", "AEST": "AEST", "JST": "JST", "CAT": "CAT", "CST": "CST", "CDT": "CDT", "HNPMX": "HNPMX", "HNEG": "HNEG", "GFT": "GFT", "HKT": "HKT", "WART": "WART", "WARST": "WARST", "ChST": "ChST", "WAT": "WAT", "NZDT": "NZDT", "BOT": "BOT", "AKDT": "AKDT", "ECT": "ECT", "HNPM": "HNPM", "COST": "COST", "AWDT": "AWDT", "WIB": "WIB", "EDT": "EDT", "MESZ": "MESZ", "HAT": "HAT", "HEPM": "HEPM", "SRT": "SRT", "ARST": "ARST", "MDT": "MDT", "HAST": "HAST", "AWST": "AWST", "AST": "AST", "BT": "BT"},
 	}
 }
 
 // Locale returns the current translators string locale
-func (shi *shi_Tfng_MA) Locale() string {
+func (shi *shi_Tfng) Locale() string {
 	return shi.locale
 }
 
-// PluralsCardinal returns the list of cardinal plural rules associated with 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) PluralsCardinal() []locales.PluralRule {
+// PluralsCardinal returns the list of cardinal plural rules associated with 'shi_Tfng'
+func (shi *shi_Tfng) PluralsCardinal() []locales.PluralRule {
 	return shi.pluralsCardinal
 }
 
-// PluralsOrdinal returns the list of ordinal plural rules associated with 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) PluralsOrdinal() []locales.PluralRule {
+// PluralsOrdinal returns the list of ordinal plural rules associated with 'shi_Tfng'
+func (shi *shi_Tfng) PluralsOrdinal() []locales.PluralRule {
 	return shi.pluralsOrdinal
 }
 
-// PluralsRange returns the list of range plural rules associated with 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) PluralsRange() []locales.PluralRule {
+// PluralsRange returns the list of range plural rules associated with 'shi_Tfng'
+func (shi *shi_Tfng) PluralsRange() []locales.PluralRule {
 	return shi.pluralsRange
 }
 
-// CardinalPluralRule returns the cardinal PluralRule given 'num' and digits/precision of 'v' for 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) CardinalPluralRule(num float64, v uint64) locales.PluralRule {
+// CardinalPluralRule returns the cardinal PluralRule given 'num' and digits/precision of 'v' for 'shi_Tfng'
+func (shi *shi_Tfng) CardinalPluralRule(num float64, v uint64) locales.PluralRule {
 
 	n := math.Abs(num)
 	i := int64(n)
@@ -99,115 +99,115 @@ func (shi *shi_Tfng_MA) CardinalPluralRule(num float64, v uint64) locales.Plural
 	return locales.PluralRuleOther
 }
 
-// OrdinalPluralRule returns the ordinal PluralRule given 'num' and digits/precision of 'v' for 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) OrdinalPluralRule(num float64, v uint64) locales.PluralRule {
+// OrdinalPluralRule returns the ordinal PluralRule given 'num' and digits/precision of 'v' for 'shi_Tfng'
+func (shi *shi_Tfng) OrdinalPluralRule(num float64, v uint64) locales.PluralRule {
 	return locales.PluralRuleUnknown
 }
 
-// RangePluralRule returns the ordinal PluralRule given 'num1', 'num2' and digits/precision of 'v1' and 'v2' for 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) RangePluralRule(num1 float64, v1 uint64, num2 float64, v2 uint64) locales.PluralRule {
+// RangePluralRule returns the ordinal PluralRule given 'num1', 'num2' and digits/precision of 'v1' and 'v2' for 'shi_Tfng'
+func (shi *shi_Tfng) RangePluralRule(num1 float64, v1 uint64, num2 float64, v2 uint64) locales.PluralRule {
 	return locales.PluralRuleUnknown
 }
 
 // MonthAbbreviated returns the locales abbreviated month given the 'month' provided
-func (shi *shi_Tfng_MA) MonthAbbreviated(month time.Month) string {
+func (shi *shi_Tfng) MonthAbbreviated(month time.Month) string {
 	return shi.monthsAbbreviated[month]
 }
 
 // MonthsAbbreviated returns the locales abbreviated months
-func (shi *shi_Tfng_MA) MonthsAbbreviated() []string {
+func (shi *shi_Tfng) MonthsAbbreviated() []string {
 	return shi.monthsAbbreviated[1:]
 }
 
 // MonthNarrow returns the locales narrow month given the 'month' provided
-func (shi *shi_Tfng_MA) MonthNarrow(month time.Month) string {
+func (shi *shi_Tfng) MonthNarrow(month time.Month) string {
 	return shi.monthsNarrow[month]
 }
 
 // MonthsNarrow returns the locales narrow months
-func (shi *shi_Tfng_MA) MonthsNarrow() []string {
+func (shi *shi_Tfng) MonthsNarrow() []string {
 	return shi.monthsNarrow[1:]
 }
 
 // MonthWide returns the locales wide month given the 'month' provided
-func (shi *shi_Tfng_MA) MonthWide(month time.Month) string {
+func (shi *shi_Tfng) MonthWide(month time.Month) string {
 	return shi.monthsWide[month]
 }
 
 // MonthsWide returns the locales wide months
-func (shi *shi_Tfng_MA) MonthsWide() []string {
+func (shi *shi_Tfng) MonthsWide() []string {
 	return shi.monthsWide[1:]
 }
 
 // WeekdayAbbreviated returns the locales abbreviated weekday given the 'weekday' provided
-func (shi *shi_Tfng_MA) WeekdayAbbreviated(weekday time.Weekday) string {
+func (shi *shi_Tfng) WeekdayAbbreviated(weekday time.Weekday) string {
 	return shi.daysAbbreviated[weekday]
 }
 
 // WeekdaysAbbreviated returns the locales abbreviated weekdays
-func (shi *shi_Tfng_MA) WeekdaysAbbreviated() []string {
+func (shi *shi_Tfng) WeekdaysAbbreviated() []string {
 	return shi.daysAbbreviated
 }
 
 // WeekdayNarrow returns the locales narrow weekday given the 'weekday' provided
-func (shi *shi_Tfng_MA) WeekdayNarrow(weekday time.Weekday) string {
+func (shi *shi_Tfng) WeekdayNarrow(weekday time.Weekday) string {
 	return shi.daysNarrow[weekday]
 }
 
 // WeekdaysNarrow returns the locales narrow weekdays
-func (shi *shi_Tfng_MA) WeekdaysNarrow() []string {
+func (shi *shi_Tfng) WeekdaysNarrow() []string {
 	return shi.daysNarrow
 }
 
 // WeekdayShort returns the locales short weekday given the 'weekday' provided
-func (shi *shi_Tfng_MA) WeekdayShort(weekday time.Weekday) string {
+func (shi *shi_Tfng) WeekdayShort(weekday time.Weekday) string {
 	return shi.daysShort[weekday]
 }
 
 // WeekdaysShort returns the locales short weekdays
-func (shi *shi_Tfng_MA) WeekdaysShort() []string {
+func (shi *shi_Tfng) WeekdaysShort() []string {
 	return shi.daysShort
 }
 
 // WeekdayWide returns the locales wide weekday given the 'weekday' provided
-func (shi *shi_Tfng_MA) WeekdayWide(weekday time.Weekday) string {
+func (shi *shi_Tfng) WeekdayWide(weekday time.Weekday) string {
 	return shi.daysWide[weekday]
 }
 
 // WeekdaysWide returns the locales wide weekdays
-func (shi *shi_Tfng_MA) WeekdaysWide() []string {
+func (shi *shi_Tfng) WeekdaysWide() []string {
 	return shi.daysWide
 }
 
 // Decimal returns the decimal point of number
-func (shi *shi_Tfng_MA) Decimal() string {
+func (shi *shi_Tfng) Decimal() string {
 	return shi.decimal
 }
 
 // Group returns the group of number
-func (shi *shi_Tfng_MA) Group() string {
+func (shi *shi_Tfng) Group() string {
 	return shi.group
 }
 
 // Group returns the minus sign of number
-func (shi *shi_Tfng_MA) Minus() string {
+func (shi *shi_Tfng) Minus() string {
 	return shi.minus
 }
 
-// FmtNumber returns 'num' with digits/precision of 'v' for 'shi_Tfng_MA' and handles both Whole and Real numbers based on 'v'
-func (shi *shi_Tfng_MA) FmtNumber(num float64, v uint64) string {
+// FmtNumber returns 'num' with digits/precision of 'v' for 'shi_Tfng' and handles both Whole and Real numbers based on 'v'
+func (shi *shi_Tfng) FmtNumber(num float64, v uint64) string {
 
 	return strconv.FormatFloat(math.Abs(num), 'f', int(v), 64)
 }
 
-// FmtPercent returns 'num' with digits/precision of 'v' for 'shi_Tfng_MA' and handles both Whole and Real numbers based on 'v'
+// FmtPercent returns 'num' with digits/precision of 'v' for 'shi_Tfng' and handles both Whole and Real numbers based on 'v'
 // NOTE: 'num' passed into FmtPercent is assumed to be in percent already
-func (shi *shi_Tfng_MA) FmtPercent(num float64, v uint64) string {
+func (shi *shi_Tfng) FmtPercent(num float64, v uint64) string {
 	return strconv.FormatFloat(math.Abs(num), 'f', int(v), 64)
 }
 
-// FmtCurrency returns the currency representation of 'num' with digits/precision of 'v' for 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) FmtCurrency(num float64, v uint64, currency currency.Type) string {
+// FmtCurrency returns the currency representation of 'num' with digits/precision of 'v' for 'shi_Tfng'
+func (shi *shi_Tfng) FmtCurrency(num float64, v uint64, currency currency.Type) string {
 
 	s := strconv.FormatFloat(math.Abs(num), 'f', int(v), 64)
 	symbol := shi.currencies[currency]
@@ -263,9 +263,9 @@ func (shi *shi_Tfng_MA) FmtCurrency(num float64, v uint64, currency currency.Typ
 	return string(b)
 }
 
-// FmtAccounting returns the currency representation of 'num' with digits/precision of 'v' for 'shi_Tfng_MA'
+// FmtAccounting returns the currency representation of 'num' with digits/precision of 'v' for 'shi_Tfng'
 // in accounting notation.
-func (shi *shi_Tfng_MA) FmtAccounting(num float64, v uint64, currency currency.Type) string {
+func (shi *shi_Tfng) FmtAccounting(num float64, v uint64, currency currency.Type) string {
 
 	s := strconv.FormatFloat(math.Abs(num), 'f', int(v), 64)
 	symbol := shi.currencies[currency]
@@ -328,8 +328,8 @@ func (shi *shi_Tfng_MA) FmtAccounting(num float64, v uint64, currency currency.T
 	return string(b)
 }
 
-// FmtDateShort returns the short date representation of 't' for 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) FmtDateShort(t time.Time) string {
+// FmtDateShort returns the short date representation of 't' for 'shi_Tfng'
+func (shi *shi_Tfng) FmtDateShort(t time.Time) string {
 
 	b := make([]byte, 0, 32)
 
@@ -347,8 +347,8 @@ func (shi *shi_Tfng_MA) FmtDateShort(t time.Time) string {
 	return string(b)
 }
 
-// FmtDateMedium returns the medium date representation of 't' for 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) FmtDateMedium(t time.Time) string {
+// FmtDateMedium returns the medium date representation of 't' for 'shi_Tfng'
+func (shi *shi_Tfng) FmtDateMedium(t time.Time) string {
 
 	b := make([]byte, 0, 32)
 
@@ -366,8 +366,8 @@ func (shi *shi_Tfng_MA) FmtDateMedium(t time.Time) string {
 	return string(b)
 }
 
-// FmtDateLong returns the long date representation of 't' for 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) FmtDateLong(t time.Time) string {
+// FmtDateLong returns the long date representation of 't' for 'shi_Tfng'
+func (shi *shi_Tfng) FmtDateLong(t time.Time) string {
 
 	b := make([]byte, 0, 32)
 
@@ -385,8 +385,8 @@ func (shi *shi_Tfng_MA) FmtDateLong(t time.Time) string {
 	return string(b)
 }
 
-// FmtDateFull returns the full date representation of 't' for 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) FmtDateFull(t time.Time) string {
+// FmtDateFull returns the full date representation of 't' for 'shi_Tfng'
+func (shi *shi_Tfng) FmtDateFull(t time.Time) string {
 
 	b := make([]byte, 0, 32)
 
@@ -406,32 +406,32 @@ func (shi *shi_Tfng_MA) FmtDateFull(t time.Time) string {
 	return string(b)
 }
 
-// FmtTimeShort returns the short time representation of 't' for 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) FmtTimeShort(t time.Time) string {
+// FmtTimeShort returns the short time representation of 't' for 'shi_Tfng'
+func (shi *shi_Tfng) FmtTimeShort(t time.Time) string {
 
 	b := make([]byte, 0, 32)
 
 	return string(b)
 }
 
-// FmtTimeMedium returns the medium time representation of 't' for 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) FmtTimeMedium(t time.Time) string {
+// FmtTimeMedium returns the medium time representation of 't' for 'shi_Tfng'
+func (shi *shi_Tfng) FmtTimeMedium(t time.Time) string {
 
 	b := make([]byte, 0, 32)
 
 	return string(b)
 }
 
-// FmtTimeLong returns the long time representation of 't' for 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) FmtTimeLong(t time.Time) string {
+// FmtTimeLong returns the long time representation of 't' for 'shi_Tfng'
+func (shi *shi_Tfng) FmtTimeLong(t time.Time) string {
 
 	b := make([]byte, 0, 32)
 
 	return string(b)
 }
 
-// FmtTimeFull returns the full time representation of 't' for 'shi_Tfng_MA'
-func (shi *shi_Tfng_MA) FmtTimeFull(t time.Time) string {
+// FmtTimeFull returns the full time representation of 't' for 'shi_Tfng'
+func (shi *shi_Tfng) FmtTimeFull(t time.Time) string {
 
 	b := make([]byte, 0, 32)
 
